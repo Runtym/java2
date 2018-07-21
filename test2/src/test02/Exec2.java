@@ -14,6 +14,10 @@ public class Exec2 {
 		Person person = new Person("홍길동",33);
 		printObject(person);
 		Cat c = new Cat("동동이", 22);
+		c.name = "라라라~";
+		c.age = 30;
 		printObject(c);
+		Dog d = new Dog("카드", 22);
+		printObject(d);
 	}
 }

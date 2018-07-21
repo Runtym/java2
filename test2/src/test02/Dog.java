@@ -1,10 +1,10 @@
 package test02;
 
-public class Cat implements Action {
-	public String name;
-	public int age;
+public class Dog implements Action {
+	private String name;
+	private int age;
 	
-	public Cat(String name, int age) {
+	public Dog(String name, int age) {
 		this.name = name;
 		this.age = age;
 	}
@@ -13,17 +13,17 @@ public class Cat implements Action {
 	}
 	@Override
 	public void sleep() {
-		pr("고양이 " + this.name + "가 잡니다.");
+		pr("개 " + this.name + "가 잡니다.");
 	}
 
 	@Override
 	public void run() {
-		pr("고양이 " + this.name + "가 뜁니다.");
+		pr("개 " + this.name + "가 뜁니다.");
 	}
 
 	@Override
 	public void walk() {
-		pr(this.age + "살 고양이 " + this.name + "가 걷습니다.");
+		pr(this.age + "살 개 " + this.name + "가 걷습니다.");
 	}
 
 	@Override
@@ -36,6 +36,4 @@ public class Cat implements Action {
 	public void breakUp() {
 		// TODO Auto-generated method stub
 		
-	}
-
-}
+	}}
