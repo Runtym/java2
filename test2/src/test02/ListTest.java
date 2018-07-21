@@ -1,7 +1,5 @@
 package test02;
 
-import java.util.ArrayList;
-
 public class ListTest {
 	private String[] strs = new String[0];
 	private int size = 0;
@@ -31,15 +29,24 @@ public class ListTest {
 		str += "]";
 		return str;
 	}
+	public int indexOf(String s) {
+		for(int i=0;i<strs.length;i++) {
+			if(s.equals(strs[i])) {
+				return i;
+			}
+		}
+		return -1;
+	}
 	public static void main(String[] args) {
 		ListTest lt = new ListTest();
 		System.out.println(lt.size());
-		lt.add("abc");
-		lt.add("abc");
-		lt.add("abc");
-		lt.add("abc");
-		lt.add("abc");
+		lt.add("a");
+		lt.add("23");
+		lt.add("adfsas");
+		lt.add("bv");
+		lt.add("aaa");
 		System.out.println(lt.size());
 		System.out.println(lt);
+		System.out.println(lt.indexOf("23"));
 	}
 }
