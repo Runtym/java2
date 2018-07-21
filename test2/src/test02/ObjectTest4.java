@@ -5,6 +5,11 @@ public class ObjectTest4 {
 	private int power;
 	private String heroName;
 	
+	public ObjectTest4(int speed, int power, String heroName) {
+		this.speed = speed;
+		this.power = power;
+		this.heroName = heroName;
+	}
 	
 	
 	public String toString() {
@@ -14,8 +19,12 @@ public class ObjectTest4 {
 	
 	public static void main(String[] args) {
 		ObjectTest4[] ot4s = new ObjectTest4[2];
-		ot4s[0] = new ObjectTest4();
-		String str = ot4s[0].toString();
-		System.out.println(str);
+		ot4s[0] = new ObjectTest4(10,10,"È«±æµ¿");
+		ot4s[1] = new ObjectTest4(20,20,"ÀÓ²©Á¤");
+		
+		for(ObjectTest4 ot4 : ot4s) {
+			System.out.println(ot4);
+		}
+		
 	}
 }
